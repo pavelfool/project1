@@ -5,16 +5,12 @@
     <div class="place">
         <div class="box">
             <div class="box1">
-                <h3 [style.color]="'black'" id="BadWord">Bad words: <span style="color: red;">  {{ badWord.join(' ') }}</span></h3>
-
-                <!-- [style.color]="'black'" — задаёт чёрный цвет заголовку.
-<span> — задаёт красный цвет только словам из массива.
-{{ badWord.join(' ') }} — выводит слова через запятую. -->
-
+                <h3 [style.color]="'black'" id="BadWord">Bad words: <span style="color: red;"> {{ badWord.join(' ')
+                        }}</span></h3>
             </div>
             <div class="box2">
                 <input type="text" id="input" placeholder="word here...">
-                <button id="add" #addButton (click)="getAdd(addButton)">Add</button>       
+                <button id="add" #addButton (click)="getAdd(addButton)">Add</button>
                 <button id="reset" #resetButton (click)="getRes(resetButton)">Reset</button>
             </div>
             <div class="box3">
